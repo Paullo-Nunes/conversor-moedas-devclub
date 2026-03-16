@@ -113,3 +113,9 @@ section {
     width: 44px;
     height: 44px;
 }
+
+.moeda-entrada, .moeda-saida {
+    font-weight: 700;
+    font-size: 20px;
+    color: #555;
+}
