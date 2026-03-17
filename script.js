@@ -10,7 +10,8 @@ function convertValues() {
     const dolarToday = 5.2
 
     const convertValor = valorInicial / dolarToday
-
+    
+    //Ferramenta de conversão de moedas do javascript "Intel.NumberFormat" ler documentação
     valorParaConverter.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL"
