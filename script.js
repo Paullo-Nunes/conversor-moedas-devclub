@@ -13,7 +13,8 @@ function convertValues() {
 
     valorParaConverter.innerHTML = valorInicial
 
-    console.log(convertValor)
+    valorConvertido.innerHTML = convertValor
+
 } 
 
 convertButton.addEventListener("click", convertValues)
