@@ -1,4 +1,4 @@
-const convertButton = document.querySelector("convert-button")
+const convertButton = document.querySelector(".convert-button")
 
 function convertValues() {
     const valorInicial = document.querySelector(".moeda-entrada").value
