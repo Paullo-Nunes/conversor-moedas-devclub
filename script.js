@@ -11,6 +11,8 @@ function convertValues() {
 
     const convertValor = valorInicial / dolarToday
 
+    valorParaConverter.innerHTML = valorInicial
+
     console.log(convertValor)
 } 
 
