@@ -9,11 +9,20 @@ function convertValues() {
 
     const valorConvertido = document.querySelector(".moeda-saida") //outras moedas
 
-    console.log(moedaSelecioda.value)
     const dolarToday = 5.2
     const euroToday = 6.2
 
-    const convertValor = valorInicial / dolarToday
+    //Validando a moeda selecionada
+    if(moedaSelecioda.value == "dolar") {
+        valorConvertido.innerHTML = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+    }).format(valorInicial / dolarToday)
+
+    }
+    if(moedaSelecioda.value == "euro") {
+
+    }
 
     //Ferramenta de conversão de moedas do javascript "Intel.NumberFormat" ler documentação
     valorParaConverter.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -21,10 +30,7 @@ function convertValues() {
         currency: "BRL"
     }).format(valorInicial)
 
-    valorConvertido.innerHTML = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD"
-    }).format(convertValor)
+    
 
 } 
 
