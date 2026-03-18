@@ -9,7 +9,7 @@ function convertValues() {
 
     const valorConvertido = document.querySelector(".moeda-saida") //outras moedas
 
-    console.log(moedaSelecioda)
+    console.log(moedaSelecioda.value)
     const dolarToday = 5.2
     const euroToday = 6.2
 
