@@ -1,4 +1,6 @@
+//Mapeando itens
 const convertButton = document.querySelector(".convert-button")
+const moedaSelecioda = document.getElementById("moeda-selecionada")
 
 function convertValues() {
     const valorInicial = document.querySelector(".valor-moeda").value
@@ -7,7 +9,9 @@ function convertValues() {
 
     const valorConvertido = document.querySelector(".moeda-saida") //outras moedas
 
+    console.log(moedaSelecioda)
     const dolarToday = 5.2
+    const euroToday = 6.2
 
     const convertValor = valorInicial / dolarToday
 
