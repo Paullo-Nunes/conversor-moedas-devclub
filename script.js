@@ -42,7 +42,7 @@ function convertValues() {
 function mudarMoeda() {
     const nomeMoeda = document.querySelector(".moeda-dolar")//buscando pelo texto
     if (moedaSelecionada.value == "Dolar") {
-        nomeMoeda.innerHTML = "Dólar americano"
+        nomeMoeda.innerHTML = "Dólar americano" 
         
     }
      if (moedaSelecionada.value == "Euro") {
