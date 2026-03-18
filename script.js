@@ -21,6 +21,10 @@ function convertValues() {
 
     }
     if(moedaSelecioda.value == "euro") {
+        valorConvertido.innerHTML = new Intl.NumberFormat("de-DE", {
+            style: "currency",
+            currency: "EUR"
+        }).format(valorInicial / euroToday)
 
     }
 
