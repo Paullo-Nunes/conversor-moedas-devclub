@@ -41,14 +41,20 @@ function convertValues() {
 
 function mudarMoeda() {
     const nomeMoeda = document.querySelector(".moeda-dolar")//buscando pelo texto
+    const imageMoeda = document.querySelector(".imagem-dolar")
+
     if (moedaSelecionada.value == "Dolar") {
         nomeMoeda.innerHTML = "Dólar americano" 
+        imageMoeda.src = "./assets/estados-unidos.png"
         
     }
      if (moedaSelecionada.value == "Euro") {
         nomeMoeda.innerHTML = "Euro"
+        imageMoeda.src = "./assets/euro-imagem.png"
         
     }
+
+    convertValues()
 
 
 }
