@@ -1,6 +1,5 @@
-//Mapeando itens
 const convertButton = document.querySelector(".convert-button")
-const moedaSelecioda = document.getElementById("moeda-selecionada")
+const moedaSelecionada = document.getElementById("moeda-selecionada")
 
 function convertValues() {
     const valorInicial = document.querySelector(".valor-moeda").value
@@ -10,31 +9,31 @@ function convertValues() {
     const valorConvertido = document.querySelector(".moeda-saida") //outras moedas
 
     const dolarToday = 5.2
-    const euroToday = 6.2
+    const euroToday = 6.3
+    // console.log(moedaSelecionada.value)
 
-    //Validando a moeda selecionada
-    if(moedaSelecioda.value == "dolar") {
-        valorConvertido.innerHTML = new Intl.NumberFormat("en-US", {
+    // const convertValor = valorInicial / dolarToday
+
+    if (moedaSelecionada.value == "Dolar") {
+         valorConvertido.innerHTML = new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD"
     }).format(valorInicial / dolarToday)
-
     }
-    if(moedaSelecioda.value == "euro") {
+
+    if (moedaSelecionada.value == "Euro") {
         valorConvertido.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(valorInicial / euroToday)
-
     }
-
     //Ferramenta de conversão de moedas do javascript "Intel.NumberFormat" ler documentação
     valorParaConverter.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL"
     }).format(valorInicial)
 
-    
+   
 
 } 
 
