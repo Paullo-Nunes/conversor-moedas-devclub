@@ -97,7 +97,7 @@ section {
     height: 44px;
 }
 
-.moeda-atual, .valor-convertido {
+.moeda-atual, .moeda-dolar {
     color: #777;
     font-weight: 400;
     font-size: 14px;

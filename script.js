@@ -15,10 +15,10 @@ function convertValues() {
     // const convertValor = valorInicial / dolarToday
 
     if (moedaSelecionada.value == "Dolar") {
-         valorConvertido.innerHTML = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD"
-    }).format(valorInicial / dolarToday)
+        valorConvertido.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD"
+        }).format(valorInicial / dolarToday)
     }
 
     if (moedaSelecionada.value == "Euro") {
@@ -33,8 +33,24 @@ function convertValues() {
         currency: "BRL"
     }).format(valorInicial)
 
-   
 
-} 
 
+}
+
+//Mudando de moeda
+
+function mudarMoeda() {
+    const nomeMoeda = document.querySelector(".moeda-dolar")//buscando pelo texto
+    if (moedaSelecionada.value == "Dolar") {
+        nomeMoeda.innerHTML = "Dólar americano"
+        
+    }
+     if (moedaSelecionada.value == "Euro") {
+        nomeMoeda.innerHTML = "Euro"
+        
+    }
+
+
+}
+moedaSelecionada.addEventListener("change", mudarMoeda)
 convertButton.addEventListener("click", convertValues)
