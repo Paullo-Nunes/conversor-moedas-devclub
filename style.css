@@ -85,22 +85,26 @@ section {
 
 }
 
-.estados-unidos, .moedas {
+.estados-unidos,
+.moedas {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.moeda-real, .imagem-dolar {
+.moeda-real,
+.imagem-dolar {
     width: 44px;
     height: 44px;
     filter: drop-shadow(1px 2px 10px hsla(300, 100%, 10%, 0.5));
 
 
 }
+
 /*mudança de nome de classe*/
-.moeda-atual, .moeda-dolar {
+.moeda-atual,
+.moeda-dolar {
     color: #777;
     font-weight: 400;
     font-size: 14px;
@@ -110,9 +114,10 @@ section {
     color: #772FD3;
     width: 44px;
     height: 44px;
-}   
+}
 
-.moeda-entrada, .moeda-saida {
+.moeda-entrada,
+.moeda-saida {
     font-weight: 700;
     font-size: 20px;
     color: #555;
