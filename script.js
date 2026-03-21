@@ -10,6 +10,8 @@ function convertValues() {
 
     const dolarToday = 5.2
     const euroToday = 6.3
+    const libraToday = 6.97
+    const bitcoinToday = 380.000
     // console.log(moedaSelecionada.value)
 
     // const convertValor = valorInicial / dolarToday
